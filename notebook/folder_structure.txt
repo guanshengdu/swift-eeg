@@ -1,0 +1,43 @@
+SWIFT-EEG/
+│── data/                     # Raw and processed EEG datasets
+│   ├── raw/                  # Unprocessed EEG recordings
+│   ├── preprocessed/         # Cleaned and preprocessed EEG data
+│   ├── metadata/             # Subject and recording metadata
+│
+│── notebooks/                # Jupyter notebooks for exploratory analysis
+│   ├── 01-data-preprocessing.ipynb   # Data cleaning & filtering
+│   ├── 02-slow-wave-detection.ipynb  # Slow wave event detection
+│   ├── 03-feature-extraction.ipynb   # Extracting SW features
+│   ├── 04-classification.ipynb       # Classification of SW types
+│
+│── src/                      # Source code for processing and analysis
+│   ├── preprocessing.py       # EEG preprocessing functions
+│   ├── slow_wave_detection.py # Detects slow waves from EEG signals
+│   ├── feature_extraction.py  # Extracts morphological & synchronization features
+│   ├── classification.py      # Differentiates Type I and Type II slow waves
+│   ├── source_localization.py # Infers cortical and subcortical sources
+│   ├── visualization.py       # Plots EEG waveforms and analysis results
+│
+│── results/                  # Output from experiments and analyses
+│   ├── figures/              # Plots of slow wave characteristics
+│   ├── statistics/           # Summarized numerical results
+│
+│── scripts/                  # Standalone scripts for batch processing
+│   ├── run_pipeline.py       # Runs full data processing pipeline
+│
+│── models/                   # Machine learning models for classification
+│   ├── trained_models/       # Saved ML models
+│
+│── config/                   # Configuration files
+│   ├── settings.yaml         # Experiment settings and parameters
+│
+│── docs/                     # Documentation files
+│   ├── README.md             # Project documentation
+│   ├── methodology.md        # Explanation of slow wave detection & classification
+│   ├── references.md         # Related papers and resources
+│
+│── environment.yml           # Conda environment setup
+│── requirements.txt          # Required Python packages
+│── .gitignore                # Files to ignore in version control
+│── LICENSE                   # License information
+│── README.md                 # Project overview (this file)
